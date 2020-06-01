@@ -4,12 +4,12 @@ import (
 	"github.com/SamyRai/go-test/homework-1/mathAdditions"
 )
 
-const RubToDollarExchangeRate = 70
+const rubToDollarExchangeRate = 70
 
 func RublesToDollars(amount float64) float64 {
-	return mathAdditions.RoundToTwoDecimals(amount / RubToDollarExchangeRate)
+	return mathAdditions.RoundToTwoDecimals(amount / rubToDollarExchangeRate)
 }
 
 func DollarsToRubles(amount float64) float64 {
-	return amount * RubToDollarExchangeRate
+	return amount * rubToDollarExchangeRate
 }
