@@ -10,14 +10,13 @@ import (
 const fileName = "phone-book.json"
 
 type Person struct {
-	Name string `json:"name"`
+	Name   string `json:"name"`
 	Number string `json:"number"`
-	Age uint  `json:"age"`
+	Age    uint   `json:"age"`
 }
 
-func readFromFile(filename string) (people []Person, err error){
+func readFromFile(filename string) (people []Person, err error) {
 	jsonString, err := ioutil.ReadFile(filename)
-
 	if err != nil {
 		return people, err
 	}
@@ -26,6 +25,7 @@ func readFromFile(filename string) (people []Person, err error){
 	if err != nil {
 		return people, err
 	}
+
 	return people, err
 }
 
@@ -51,7 +51,7 @@ func main() {
 
 	fmt.Println(people)
 
-	people = append(people, Person{ "New Person", "1250232565", 33 } )
+	people = append(people, Person{"New Person", "1250232565", 33})
 
 	fmt.Println(people)
 
