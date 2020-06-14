@@ -1,1 +1,12 @@
-[{"name":"Ali Baba","number":"1250232565","age":33},{"name":"Angel Hertz","number":"4348098098234","age":25},{"name":"Ivan Boiko","number":"345435435","age":65},{"name":"New Person","number":"1250232565","age":33},{"name":"New Person","number":"1250232565","age":33}]
+[
+	{
+		"name": "Angel Hertz",
+		"number": "4348098098234",
+		"age": 25
+	},
+	{
+		"name": "Ivan Boiko",
+		"number": "345435435",
+		"age": 65
+	}
+]

@@ -51,7 +51,7 @@ func readFromFile(filename string) (people PhoneBook, err error) {
 }
 
 func writeToFile(filename string, peopleList PhoneBook) error {
-	peopleInJson, err := json.Marshal(peopleList)
+	peopleInJson, err := json.MarshalIndent(peopleList, "", "\t")
 	if err != nil {
 		return err
 	}
