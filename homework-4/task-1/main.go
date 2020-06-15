@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
-	Account "github.com/SamyRai/go-test/homework-4/account"
+	Account "github.com/SamyRai/go-test/homework-4/task-1/account"
 )
 
+// Interface to calculate how much money left by the end of the year
 type Money interface {
 	YearLeftover() float64
 }
 
+// Calculate how much money left in all accounts
 func TotalMoneyLeft(accounts ...Money) (result float64) {
 	for _, account := range accounts {
 		result = result + account.YearLeftover()
