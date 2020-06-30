@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    {{if .Guest}}
+        <p>Hello {{ .Guest }}</p>
+    {{else}}
+        <p>Are you a stranger?</p>
+    {{end}}
+</body>
+</html>
